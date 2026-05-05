@@ -4614,6 +4614,23 @@ body.lightbox-open {
     -webkit-transform: none !important;
   }
 
+  .project-page-section .mobile-shot,
+  .project-page-section .mobile-shot.gif-card,
+  .project-page-section .mobile-shot.video-card {
+    display: block !important;
+    align-items: initial !important;
+    justify-content: initial !important;
+  }
+
+  .project-page-section .mobile-shot.video-card {
+    width: min(100%, 288px) !important;
+    max-width: 288px !important;
+    aspect-ratio: 9 / 20 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+
   .mobile-shot img,
   .mobile-shot.gif-card img,
   .mobile-shot video,
@@ -4647,6 +4664,17 @@ body.lightbox-open {
     backface-visibility: visible !important;
     -webkit-backface-visibility: visible !important;
     contain: none !important;
+  }
+
+  .project-page-section .mobile-shot.video-card video {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    transform: none !important;
+    -webkit-transform: none !important;
   }
 
   .contact-row {

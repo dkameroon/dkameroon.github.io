@@ -285,52 +285,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ".project-page-section .mobile-shot img, .project-page-section .featured-preview img"
     ));
 
-    const refreshProjectMediaImage = (image) => {
-        if (!image) {
-            return;
-        }
-
-        const applyRefresh = () => {
-            const card = image.closest(".mobile-shot, .featured-preview");
-
-            image.style.opacity = "1";
-            image.style.visibility = "visible";
-            image.style.display = "none";
-            void image.offsetHeight;
-            image.style.display = "block";
-
-            if (card) {
-                card.style.display = "none";
-                void card.offsetHeight;
-                card.style.display = "";
-            }
-        };
-
-        window.requestAnimationFrame(() => {
-            window.requestAnimationFrame(applyRefresh);
-        });
-    };
-
-    const refreshAllProjectMediaImages = () => {
-        projectMediaImages.forEach((image) => refreshProjectMediaImage(image));
-    };
-
     projectMediaImages.forEach((image) => {
         image.loading = "eager";
         image.decoding = "sync";
-
-        if (image.complete) {
-            refreshProjectMediaImage(image);
-            return;
-        }
-
-        image.addEventListener("load", () => refreshProjectMediaImage(image), { once: true });
-    });
-
-    window.addEventListener("load", refreshAllProjectMediaImages);
-    window.addEventListener("pageshow", refreshAllProjectMediaImages);
-    window.addEventListener("orientationchange", () => {
-        window.setTimeout(refreshAllProjectMediaImages, 80);
     });
 
     const formatMediaTime = (seconds) => {
