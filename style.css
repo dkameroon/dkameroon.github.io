@@ -3242,7 +3242,6 @@ body.cv-preview-open {
   border-radius: 50%;
   padding: 7px;
   overflow: hidden;
-  isolation: isolate;
   background: linear-gradient(
     135deg,
     rgba(88, 166, 255, 0.95),
@@ -3250,8 +3249,7 @@ body.cv-preview-open {
     rgba(46, 160, 67, 0.82)
   );
   background-clip: padding-box;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   box-shadow:
     0 0 0 1px rgba(88, 166, 255, 0.18),
     0 28px 58px rgba(0, 0, 0, 0.34),
@@ -3260,16 +3258,7 @@ body.cv-preview-open {
 }
 
 .hero-avatar-frame::before {
-  content: "";
-  position: absolute;
-  inset: -18px;
-  border-radius: inherit;
-  background: radial-gradient(
-    circle,
-    rgba(88, 166, 255, 0.18) 0%,
-    transparent 65%
-  );
-  z-index: -1;
+  display: none;
 }
 
 .hero-avatar {
@@ -3280,10 +3269,7 @@ body.cv-preview-open {
   object-position: center;
   border-radius: inherit;
   border: 6px solid #0d1117;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .hero-heading-block {
