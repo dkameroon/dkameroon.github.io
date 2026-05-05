@@ -281,6 +281,45 @@ document.addEventListener("DOMContentLoaded", () => {
         ".project-page-section .mobile-shot img, .project-page-section .mobile-shot video, .project-page-section .featured-preview img, .project-page-section .featured-preview video"
     ));
 
+    const projectMediaImages = Array.from(document.querySelectorAll(
+        ".project-page-section .mobile-shot img, .project-page-section .featured-preview img"
+    ));
+
+    const refreshProjectMediaImage = (image) => {
+        if (!image) {
+            return;
+        }
+
+        const applyRefresh = () => {
+            image.style.opacity = "1";
+            image.style.visibility = "visible";
+            image.style.transform = "translateZ(0)";
+            image.style.webkitTransform = "translateZ(0)";
+
+            const card = image.closest(".mobile-shot, .featured-preview");
+            if (card) {
+                card.style.transform = "translateZ(0)";
+                card.style.webkitTransform = "translateZ(0)";
+            }
+        };
+
+        window.requestAnimationFrame(() => {
+            window.requestAnimationFrame(applyRefresh);
+        });
+    };
+
+    projectMediaImages.forEach((image) => {
+        image.loading = "eager";
+        image.decoding = "sync";
+
+        if (image.complete) {
+            refreshProjectMediaImage(image);
+            return;
+        }
+
+        image.addEventListener("load", () => refreshProjectMediaImage(image), { once: true });
+    });
+
     const formatMediaTime = (seconds) => {
         if (!Number.isFinite(seconds)) {
             return "0:00";

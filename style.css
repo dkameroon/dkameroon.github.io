@@ -3226,14 +3226,20 @@ body.cv-preview-open {
   position: relative;
   width: clamp(195px, 15vw, 238px);
   aspect-ratio: 1;
+  display: block;
   border-radius: 50%;
   padding: 7px;
+  overflow: hidden;
+  isolation: isolate;
   background: linear-gradient(
     135deg,
     rgba(88, 166, 255, 0.95),
     rgba(139, 92, 246, 0.95),
     rgba(46, 160, 67, 0.82)
   );
+  background-clip: padding-box;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   box-shadow:
     0 0 0 1px rgba(88, 166, 255, 0.18),
     0 28px 58px rgba(0, 0, 0, 0.34),
@@ -3257,10 +3263,15 @@ body.cv-preview-open {
 .hero-avatar {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
   border-radius: inherit;
   border: 6px solid #0d1117;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .hero-heading-block {
@@ -3321,6 +3332,10 @@ body.cv-preview-open {
 
   .hero-avatar-frame {
     width: 170px;
+  }
+
+  .hero-avatar-frame::before {
+    display: none;
   }
 
   .hero-heading-block h1 {
@@ -4570,6 +4585,18 @@ body.lightbox-open {
     aspect-ratio: 9 / 20 !important;
   }
 
+  .project-page-section .mobile-shot:not(.video-card),
+  .project-page-section .mobile-shot.gif-card:not(.video-card) {
+    display: block !important;
+    width: min(100%, 288px) !important;
+    max-width: 288px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    margin: 0 auto !important;
+    background: transparent !important;
+  }
+
   .mobile-shot img,
   .mobile-shot.gif-card img,
   .mobile-shot video,
@@ -4585,6 +4612,21 @@ body.lightbox-open {
   .mobile-shot img,
   .mobile-shot.gif-card img {
     object-fit: contain !important;
+  }
+
+  .project-page-section .mobile-shot:not(.video-card) img,
+  .project-page-section .mobile-shot.gif-card:not(.video-card) img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+    object-position: center top !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
   }
 
   .contact-row {
