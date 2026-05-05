@@ -427,6 +427,19 @@ h3 {
   transform: translateY(0);
 }
 
+.media-grid.media-grid-reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.72s ease,
+    transform 0.72s ease;
+}
+
+.media-grid.media-grid-reveal.media-grid-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;

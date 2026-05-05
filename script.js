@@ -128,6 +128,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 entry.target.classList.add("visible");
+
+                if (entry.target.classList.contains("media-section-title")) {
+                    const mediaGrid = entry.target.nextElementSibling;
+
+                    if (mediaGrid && mediaGrid.classList.contains("media-grid-reveal")) {
+                        window.setTimeout(() => {
+                            mediaGrid.classList.add("media-grid-visible");
+                        }, 90);
+                    }
+                }
+
                 observer.unobserve(entry.target);
             });
         }, {
