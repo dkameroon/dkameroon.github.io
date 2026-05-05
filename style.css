@@ -4607,6 +4607,11 @@ body.lightbox-open {
     background: transparent !important;
     line-height: 0 !important;
     contain: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    transform: none !important;
+    -webkit-transform: none !important;
   }
 
   .mobile-shot img,
@@ -4631,14 +4636,17 @@ body.lightbox-open {
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
-    object-fit: contain !important;
+    max-width: 100% !important;
+    object-fit: unset !important;
     object-position: center top !important;
     opacity: 1 !important;
     visibility: visible !important;
+    display: block !important;
     transform: none !important;
     -webkit-transform: none !important;
     backface-visibility: visible !important;
     -webkit-backface-visibility: visible !important;
+    contain: none !important;
   }
 
   .contact-row {
