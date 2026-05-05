@@ -3332,10 +3332,20 @@ body.cv-preview-open {
 
   .hero-avatar-frame {
     width: 170px;
+    padding: 0;
+    background: none;
+    border: 3px solid rgba(88, 166, 255, 0.5);
+    box-shadow:
+      0 16px 32px rgba(0, 0, 0, 0.28),
+      0 0 0 1px rgba(88, 166, 255, 0.1);
   }
 
   .hero-avatar-frame::before {
     display: none;
+  }
+
+  .hero-avatar {
+    border-width: 0;
   }
 
   .hero-heading-block h1 {
@@ -4595,6 +4605,8 @@ body.lightbox-open {
     aspect-ratio: auto !important;
     margin: 0 auto !important;
     background: transparent !important;
+    line-height: 0 !important;
+    contain: none !important;
   }
 
   .mobile-shot img,
@@ -4623,10 +4635,10 @@ body.lightbox-open {
     object-position: center top !important;
     opacity: 1 !important;
     visibility: visible !important;
-    transform: translateZ(0) !important;
-    -webkit-transform: translateZ(0) !important;
-    backface-visibility: hidden !important;
-    -webkit-backface-visibility: hidden !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    backface-visibility: visible !important;
+    -webkit-backface-visibility: visible !important;
   }
 
   .contact-row {
