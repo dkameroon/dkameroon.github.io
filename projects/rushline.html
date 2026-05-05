@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushline | Viktor Kryvohuz</title>
+    <meta name="description" content="Rushline project page by Viktor Kryvohuz. Unity 3D mobile endless runner portfolio project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<nav class="section-nav project-section-nav" aria-label="Project page navigation">
+    <a href="#project-top" class="section-nav-link active" data-label="Top" aria-label="Go to project top"><span class="section-nav-icon"><i class="fa-solid fa-arrow-up"></i></span><span class="section-nav-dot"></span><span class="section-nav-text">Top</span></a>
+    <a href="#details" class="section-nav-link" data-label="Details" aria-label="Go to project details"><span class="section-nav-icon"><i class="fa-solid fa-list-check"></i></span><span class="section-nav-dot"></span><span class="section-nav-text">Details</span></a>
+    <a href="#screenshots" class="section-nav-link" data-label="Media" aria-label="Go to gameplay media"><span class="section-nav-icon"><i class="fa-solid fa-images"></i></span><span class="section-nav-dot"></span><span class="section-nav-text">Media</span></a>
+</nav>
+
+
+<header class="hero project-page-hero" id="project-top">
+    <nav class="navbar">
+        <a href="../index.html" class="logo logo-stack">
+            <span>Viktor Kryvohuz</span>
+            <small>Unity Developer</small>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+            <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+            <li><a href="../index.html#resume" class="nav-link">Resume</a></li>
+            <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Portfolio</a>
+
+        <p class="project-page-kicker">Project 05 - 3D Endless Runner</p>
+        <h1>Rushline</h1>
+
+        <p class="project-page-description">
+            Rushline is a 3D mobile endless runner where the player survives by switching lanes,
+            jumping, sliding, avoiding dynamically generated obstacle patterns, and progressing
+            through an increasingly difficult run.
+        </p>
+
+        <div class="project-page-buttons">
+            <a href="https://github.com/dkameroon/Rushline"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary icon-btn">
+                <span class="icon"><i class="fa-brands fa-github"></i></span>
+                GitHub Project
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=7_HoW21vpCo"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-secondary icon-btn">
+                <span class="icon"><i class="fa-solid fa-play"></i></span>
+                Gameplay Video
+            </a>
+
+            <a href="#screenshots" class="btn btn-secondary icon-btn">
+                <span class="icon"><i class="fa-regular fa-image"></i></span>
+                Media
+            </a>
+
+            <a href="../assets/apk/rushline.apk" download
+               class="btn btn-secondary icon-btn">
+                <span class="icon"><i class="fa-solid fa-download"></i></span>
+                Download APK
+            </a>
+        </div>
+
+        <div class="project-hero-media">
+            <div class="featured-preview">
+                <img src="../assets/images/rushline-main.png"
+                     alt="Rushline main gameplay screenshot">
+            </div>
+
+            <div id="gameplay-video" class="project-video-embed">
+                <iframe
+                    src="https://www.youtube.com/embed/7_HoW21vpCo"
+                    title="Rushline gameplay video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <a class="project-video-mobile-link" href="https://www.youtube.com/watch?v=7_HoW21vpCo" target="_blank" rel="noopener noreferrer">
+                    <div class="video-link-content">
+                        <span class="video-play-icon">▶</span>
+                        <h3>Watch Video on YouTube</h3>
+                        <p>Open the full Rushline gameplay video</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section id="details" class="project-page-section reveal">
+    <div class="container">
+
+        <div class="project-summary-grid">
+            <div class="summary-card">
+                <span>Genre</span>
+                <strong>3D Endless Runner</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Engine</span>
+                <strong>Unity 6000.3.10f1</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Language</span>
+                <strong>C#</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Platform</span>
+                <strong>Android / Mobile</strong>
+            </div>
+        </div>
+
+
+
+        <div class="project-complexity-panel" aria-label="Project complexity and focus">
+            <div class="project-complexity-item">
+                <span>Project Type</span>
+                <strong>Production-style system project</strong>
+            </div>
+
+            <div class="project-complexity-item">
+                <span>Complexity</span>
+                <strong>High</strong>
+            </div>
+
+            <div class="project-complexity-item">
+                <span>Focus</span>
+                <strong>Gameplay Systems / Architecture / Firebase / AdMob</strong>
+            </div>
+        </div>
+
+        <div class="project-content-grid">
+
+            <div class="project-content-box">
+                <h2>Overview</h2>
+
+                <p>
+                    Rushline is a mobile-focused 3D endless runner where the player survives by switching lanes, jumping, sliding and reacting to dynamically generated obstacle patterns.
+                </p>
+
+                <p>
+                    The project was developed as a more production-oriented Unity project with modular architecture, dependency injection, configurable gameplay data and separated services for gameplay, UI, ads, authentication, leaderboard, audio and save flow.
+                </p>
+
+                <p>
+                    The goal was to build a complete Android-ready runner with scalable systems, Firebase authentication, leaderboard functionality, AdMob rewarded ads and a clean structure that goes beyond a simple gameplay prototype.
+                </p>
+            </div>
+
+            <div class="project-content-box">
+                <h2>What I Implemented</h2>
+
+                <ul>
+                    <li>Complete 3D endless runner gameplay loop</li>
+                    <li>Player controller with lane switching, jump and slide mechanics</li>
+                    <li>Player state machine for idle, run, jump, slide and death states</li>
+                    <li>Mobile swipe input and editor keyboard input strategies</li>
+                    <li>Procedural road generation with segment cleanup / recycling</li>
+                    <li>Dynamic obstacle pattern spawning and difficulty scaling</li>
+                    <li>Score, best result, defeat, restart and continue flow</li>
+                    <li>Rewarded ads revive / continue system using AdMob</li>
+                    <li>Firebase login, registration and logout flow</li>
+                    <li>Leaderboard submission and top players display flow</li>
+                    <li>UI windows, popups, HUD, settings and defeat screens</li>
+                    <li>Save data for sound, music and player preferences</li>
+                </ul>
+            </div>
+
+            <div class="project-content-box project-case-study-box">
+                <h2>Technical Case Study</h2>
+
+                <div class="project-case-study-grid">
+                    <div>
+                        <h3>Technical decisions</h3>
+                        <ul>
+                            <li>Used a player state machine for idle, run, jump, slide and death states</li>
+                            <li>Built procedural road generation with segment cleanup / recycling for endless runner flow</li>
+                            <li>Integrated Firebase authentication, leaderboard flow and AdMob rewarded revive as production-style features</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>What problems I solved</h3>
+                        <ul>
+                            <li>Kept lane switching, jump and slide behavior responsive across mobile swipe input and editor testing</li>
+                            <li>Handled obstacle patterns, difficulty scaling and score flow without breaking gameplay readability</li>
+                            <li>Connected login, leaderboard, rewarded ads, restart and continue flow into one Android-ready project</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Result</h3>
+                        <ul>
+                            <li>Most production-like project in the portfolio with gameplay, UI, backend and monetization systems</li>
+                            <li>Demonstrates architecture thinking, mobile feature integration and complete game flow ownership</li>
+                            <li>Shows readiness to work on real Unity mobile tasks inside a team project</li>
+                        </ul>
+                    </div>
+                </div>            </div>
+
+            <div class="project-content-box project-links-box">
+                <h2>Project Links</h2>
+
+                <div class="project-links-list">
+                    <a href="https://github.com/dkameroon/Rushline"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary icon-btn">
+                        <span class="icon"><i class="fa-brands fa-github"></i></span>
+                        Open GitHub Repository
+                    </a>
+
+                    <a href="#gameplay-video" class="btn btn-secondary icon-btn">
+                        <span class="icon"><i class="fa-solid fa-play"></i></span>
+                        Watch Gameplay Video
+                    </a>
+
+                    <a href="#screenshots"
+                       class="btn btn-secondary icon-btn">
+                        <span class="icon"><i class="fa-regular fa-image"></i></span>
+                        View Media
+                    </a>
+
+                    <a href="../assets/apk/rushline.apk" download
+                       class="btn btn-secondary icon-btn">
+                        <span class="icon"><i class="fa-solid fa-download"></i></span>
+                        Download APK
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section id="screenshots" class="project-page-section section-alt reveal">
+        <div class="container">
+            <h2 class="media-section-title">Gameplay Media</h2>
+
+            <div class="media-grid">
+
+                <div class="mobile-shot">
+                    <img src="../assets/images/rushline-1.png"
+                         alt="Rushline screenshot 1">
+                </div>
+
+                <div class="mobile-shot video-card">
+                <video class="project-short-video"
+                       src="../assets/short-gameplay-videos/rushline-gameplay-short.mp4"
+                       aria-label="Rushline gameplay video preview"
+                       muted
+                       autoplay
+                       loop
+                       playsinline
+                       preload="auto">
+                </video>
+                <span class="video-card-badge" aria-hidden="true">
+                    <i class="fa-solid fa-volume-high"></i>
+                    Click for sound
+                </span>
+            </div>
+
+                <div class="mobile-shot">
+                    <img src="../assets/images/rushline-2.png"
+                         alt="Rushline screenshot 2">
+                </div>
+
+                <div class="mobile-shot">
+                    <img src="../assets/images/rushline-3.png"
+                         alt="Rushline screenshot 3">
+                </div>
+
+                <div class="mobile-shot">
+                    <img src="../assets/images/rushline-4.png"
+                         alt="Rushline screenshot 4">
+                </div>
+
+                <div class="mobile-shot">
+                    <img src="../assets/images/rushline-5.png"
+                         alt="Rushline screenshot 5">
+                </div>
+
+                <div class="mobile-shot">
+                    <img src="../assets/images/rushline-6.png"
+                         alt="Rushline screenshot 6">
+                </div>
+
+                <div class="mobile-shot">
+                    <img src="../assets/images/rushline-7.png"
+                         alt="Rushline screenshot 7">
+                </div>
+
+                <div class="mobile-shot">
+                    <img src="../assets/images/rushline-8.png"
+                         alt="Rushline screenshot 8">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<footer class="footer">
+    <div class="container">
+        © 2026 Viktor Kryvohuz - Unity Developer Portfolio
+    </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

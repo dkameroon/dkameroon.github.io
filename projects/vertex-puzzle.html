@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex Puzzle | Viktor Kryvohuz</title>
+    <meta name="description" content="Vertex Puzzle project page by Viktor Kryvohuz. Unity mobile puzzle game portfolio project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<nav class="section-nav project-section-nav" aria-label="Project page navigation">
+    <a href="#project-top" class="section-nav-link active" data-label="Top" aria-label="Go to project top"><span class="section-nav-icon"><i class="fa-solid fa-arrow-up"></i></span><span class="section-nav-dot"></span><span class="section-nav-text">Top</span></a>
+    <a href="#details" class="section-nav-link" data-label="Details" aria-label="Go to project details"><span class="section-nav-icon"><i class="fa-solid fa-list-check"></i></span><span class="section-nav-dot"></span><span class="section-nav-text">Details</span></a>
+    <a href="#screenshots" class="section-nav-link" data-label="Media" aria-label="Go to gameplay media"><span class="section-nav-icon"><i class="fa-solid fa-images"></i></span><span class="section-nav-dot"></span><span class="section-nav-text">Media</span></a>
+</nav>
+
+
+<header class="hero project-page-hero" id="project-top">
+    <nav class="navbar">
+        <a href="../index.html" class="logo logo-stack">
+            <span>Viktor Kryvohuz</span>
+            <small>Unity Developer</small>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+            <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+            <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+            <li><a href="../index.html#resume" class="nav-link">Resume</a></li>
+            <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Portfolio</a>
+
+        <p class="project-page-kicker">Project 03 - Puzzle Game</p>
+        <h1>Vertex Puzzle</h1>
+
+        <p class="project-page-description">
+            Vertex Puzzle is a mobile logic puzzle game where the player connects vertices
+            with lines, fills all available paths, avoids repeating the same path twice,
+            and completes each level within a limited time.
+        </p>
+
+        <div class="project-page-buttons">
+            <a href="https://github.com/dkameroon/VertexPuzzle"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary icon-btn">
+                <span class="icon"><i class="fa-brands fa-github"></i></span>
+                GitHub Project
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=DcJT3hzxhPs"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-secondary icon-btn">
+                <span class="icon"><i class="fa-solid fa-play"></i></span>
+                Gameplay Video
+            </a>
+
+            <a href="#screenshots" class="btn btn-secondary icon-btn">
+                <span class="icon"><i class="fa-regular fa-image"></i></span>
+                Media
+            </a>
+
+            <a href="../assets/apk/vertex-puzzle.apk" download
+               class="btn btn-secondary icon-btn">
+                <span class="icon"><i class="fa-solid fa-download"></i></span>
+                Download APK
+            </a>
+        </div>
+
+        <div class="project-hero-media">
+            <div class="featured-preview">
+                <img src="../assets/images/vertex-puzzle-main.png"
+                     alt="Vertex Puzzle main gameplay screenshot">
+            </div>
+
+            <div id="gameplay-video" class="project-video-embed">
+                <iframe
+                    src="https://www.youtube.com/embed/DcJT3hzxhPs"
+                    title="VertexPuzzle gameplay video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <a class="project-video-mobile-link" href="https://www.youtube.com/watch?v=DcJT3hzxhPs" target="_blank" rel="noopener noreferrer">
+                    <div class="video-link-content">
+                        <span class="video-play-icon">▶</span>
+                        <h3>Watch Video on YouTube</h3>
+                        <p>Open the full Vertex Puzzle gameplay video</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section id="details" class="project-page-section reveal">
+    <div class="container">
+
+        <div class="project-summary-grid">
+            <div class="summary-card">
+                <span>Genre</span>
+                <strong>Logic Puzzle</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Engine</span>
+                <strong>Unity 2021.3 LTS</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Language</span>
+                <strong>C#</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Platform</span>
+                <strong>Android</strong>
+            </div>
+        </div>
+
+
+
+        <div class="project-complexity-panel" aria-label="Project complexity and focus">
+            <div class="project-complexity-item">
+                <span>Project Type</span>
+                <strong>Logic puzzle system project</strong>
+            </div>
+
+            <div class="project-complexity-item">
+                <span>Complexity</span>
+                <strong>Medium / High</strong>
+            </div>
+
+            <div class="project-complexity-item">
+                <span>Focus</span>
+                <strong>Puzzle Logic / LineRenderer / Timer / UI</strong>
+            </div>
+        </div>
+
+        <div class="project-content-grid">
+
+            <div class="project-content-box">
+                <h2>Overview</h2>
+
+                <p>
+                    Vertex Puzzle is a mobile logic puzzle game where the player connects vertices with lines, fills all available paths and completes each level before the timer runs out.
+                </p>
+
+                <p>
+                    The core rule is that the same path cannot be used twice, while vertices can still be reused when they have valid unused connections.
+                </p>
+
+                <p>
+                    The project focuses on custom puzzle logic, route planning, visual feedback, LineRenderer-based drawing and a readable mobile UI for level progress, pause and settings flow.
+                </p>
+            </div>
+
+            <div class="project-content-box">
+                <h2>What I Implemented</h2>
+
+                <ul>
+                    <li>Custom vertex system with configurable connection paths</li>
+                    <li>Path generation logic between vertices</li>
+                    <li>Line drawing system using Unity LineRenderer</li>
+                    <li>Validation logic that prevents repeated path usage</li>
+                    <li>Timer system that limits the time for each level</li>
+                    <li>Progress saving and reset functionality</li>
+                    <li>Music and sound controls with saved settings</li>
+                    <li>Menu, gameplay, pause, settings and progress screens</li>
+                    <li>Custom level objects and Android build preparation</li>
+                </ul>
+            </div>
+
+            <div class="project-content-box project-case-study-box">
+                <h2>Technical Case Study</h2>
+
+                <div class="project-case-study-grid">
+                    <div>
+                        <h3>Technical decisions</h3>
+                        <ul>
+                            <li>Built custom vertex / path data so levels can define valid connections clearly</li>
+                            <li>Used LineRenderer for visual path drawing and immediate player feedback</li>
+                            <li>Separated validation logic from UI flow to keep puzzle rules easier to maintain</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>What problems I solved</h3>
+                        <ul>
+                            <li>Prevented repeated path usage while keeping the drawing interaction responsive</li>
+                            <li>Handled timer pressure, level completion and reset flow for mobile puzzle sessions</li>
+                            <li>Made the visual feedback readable enough for quick decision-making on smaller screens</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Result</h3>
+                        <ul>
+                            <li>Playable mobile logic puzzle with custom path validation and level progress</li>
+                            <li>Shows ability to build non-trivial gameplay rules beyond simple movement mechanics</li>
+                            <li>Demonstrates LineRenderer usage, state validation and UI feedback in Unity</li>
+                        </ul>
+                    </div>
+                </div>            </div>
+
+            <div class="project-content-box project-links-box">
+                <h2>Project Links</h2>
+
+                <div class="project-links-list">
+                    <a href="https://github.com/dkameroon/VertexPuzzle"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary icon-btn">
+                        <span class="icon"><i class="fa-brands fa-github"></i></span>
+                        Open GitHub Repository
+                    </a>
+
+                    <a href="#gameplay-video" class="btn btn-secondary icon-btn">
+                        <span class="icon"><i class="fa-solid fa-play"></i></span>
+                        Watch Gameplay Video
+                    </a>
+
+                    <a href="#screenshots"
+                       class="btn btn-secondary icon-btn">
+                        <span class="icon"><i class="fa-regular fa-image"></i></span>
+                        View Media
+                    </a>
+
+                    <a href="../assets/apk/vertex-puzzle.apk" download
+                       class="btn btn-secondary icon-btn">
+                        <span class="icon"><i class="fa-solid fa-download"></i></span>
+                        Download APK
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="screenshots" class="project-page-section section-alt reveal">
+    <div class="container">
+        <h2 class="media-section-title">Gameplay Media</h2>
+
+        <div class="media-grid">
+
+            <div class="mobile-shot">
+                <img src="../assets/images/vertex-puzzle-1.png"
+                     alt="Vertex Puzzle main menu screenshot">
+            </div>
+
+            <div class="mobile-shot video-card">
+                <video class="project-short-video"
+                       src="../assets/short-gameplay-videos/vertex-puzzle-short.mp4"
+                       aria-label="Vertex Puzzle gameplay video preview"
+                       muted
+                       autoplay
+                       loop
+                       playsinline
+                       preload="auto">
+                </video>
+                <span class="video-card-badge" aria-hidden="true">
+                    <i class="fa-solid fa-volume-high"></i>
+                    Click for sound
+                </span>
+            </div>
+
+            <div class="mobile-shot">
+                <img src="../assets/images/vertex-puzzle-2.png"
+                     alt="Vertex Puzzle gameplay screenshot">
+            </div>
+
+            <div class="mobile-shot">
+                <img src="../assets/images/vertex-puzzle-3.png"
+                     alt="Vertex Puzzle pause menu screenshot">
+            </div>
+
+            <div class="mobile-shot">
+                <img src="../assets/images/vertex-puzzle-4.png"
+                     alt="Vertex Puzzle settings screenshot">
+            </div>
+
+            <div class="mobile-shot">
+                <img src="../assets/images/vertex-puzzle-5.png"
+                     alt="Vertex Puzzle advanced settings or level screenshot">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<footer class="footer">
+    <div class="container">
+        © 2026 Viktor Kryvohuz - Unity Developer Portfolio
+    </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
