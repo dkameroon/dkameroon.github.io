@@ -3240,18 +3240,8 @@ body.cv-preview-open {
   aspect-ratio: 1;
   display: block;
   border-radius: 50%;
-  padding: 7px;
-  overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    rgba(88, 166, 255, 0.95),
-    rgba(139, 92, 246, 0.95),
-    rgba(46, 160, 67, 0.82)
-  );
-  background-clip: padding-box;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: visible;
   box-shadow:
-    0 0 0 1px rgba(88, 166, 255, 0.18),
     0 28px 58px rgba(0, 0, 0, 0.34),
     0 0 48px rgba(88, 166, 255, 0.18);
   flex-shrink: 0;
@@ -3267,9 +3257,12 @@ body.cv-preview-open {
   display: block;
   object-fit: cover;
   object-position: center;
-  border-radius: inherit;
+  border-radius: 50%;
   border: 6px solid #0d1117;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  box-shadow:
+    0 0 0 6px rgba(88, 166, 255, 0.92),
+    0 0 0 12px rgba(139, 92, 246, 0.86),
+    0 0 0 18px rgba(88, 166, 255, 0.28);
 }
 
 .hero-heading-block {
@@ -3330,12 +3323,7 @@ body.cv-preview-open {
 
   .hero-avatar-frame {
     width: 170px;
-    padding: 0;
-    background: none;
-    border: 3px solid rgba(88, 166, 255, 0.5);
-    box-shadow:
-      0 16px 32px rgba(0, 0, 0, 0.28),
-      0 0 0 1px rgba(88, 166, 255, 0.1);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
   }
 
   .hero-avatar-frame::before {
@@ -3343,7 +3331,11 @@ body.cv-preview-open {
   }
 
   .hero-avatar {
-    border-width: 0;
+    border-width: 4px;
+    box-shadow:
+      0 0 0 5px rgba(88, 166, 255, 0.9),
+      0 0 0 10px rgba(139, 92, 246, 0.82),
+      0 0 0 14px rgba(88, 166, 255, 0.2);
   }
 
   .hero-heading-block h1 {
